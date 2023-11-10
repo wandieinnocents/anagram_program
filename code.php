@@ -23,7 +23,7 @@ $second_string = readline("Enter the First  string: ");
  
 // Check if the strings are anagrams
 if (isStringAnagram($first_string, $second_string)) {
-    echo "The Entered strings are anagrams of each other.";
+    echo "The Captured strings are anagrams of each other.";
 } else {
-    echo "The Enterd strings are not anagrams of each other.";
+    echo "The Captured strings are not anagrams of each other.";
 }
