@@ -1,4 +1,4 @@
-# anagram_program 
+# core_php_anagram_program 
 
 ## how to run the program
 
