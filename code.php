@@ -1,6 +1,7 @@
 <?php 
 
 // Function to check if two strings are anagrams of each other
+// capture two parameters of the strings 
 function isStringAnagram($first_string, $second_string) {
     // Split strings into individual characters
     $first_array = str_split($first_string);
@@ -11,19 +12,23 @@ function isStringAnagram($first_string, $second_string) {
  
     // If the entered strings are equal , then this means they are anagrams arrays are equal
     if (empty($difference_of_strings)) {
+        // return true
         return true;
     } else {
+        // return false
         return false;
     }
 }
  
-// captrue the strings to check
+// capture  the strings to check if there are anagrams or not
 $first_string = readline("Enter the First  string: ");
 $second_string = readline("Enter the First  string: ");
  
 // Check if the strings are anagrams
 if (isStringAnagram($first_string, $second_string)) {
+    // display if captured strings are anagrams
     echo "The Captured strings are anagrams of each other.";
 } else {
+    // display if captured strings are not anagrams
     echo "The Captured strings are not anagrams of each other.";
 }
