@@ -6,8 +6,6 @@ function isStringAnagram($first_string, $second_string) {
     // Split strings into individual characters
     $first_array = str_split($first_string);
     $second_array = str_split($second_string);
-
-   
  
     // Compare the entered string  
     $difference_of_strings = array_diff($first_array, $second_array);
