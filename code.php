@@ -6,6 +6,8 @@ function isStringAnagram($first_string, $second_string) {
     // Split strings into individual characters
     $first_array = str_split($first_string);
     $second_array = str_split($second_string);
+
+   
  
     // Compare the entered string  
     $difference_of_strings = array_diff($first_array, $second_array);
@@ -23,6 +25,10 @@ function isStringAnagram($first_string, $second_string) {
 // capture  the strings to check if there are anagrams or not
 $first_string = readline("Enter the First  string: ");
 $second_string = readline("Enter the First  string: ");
+
+$first_string = preg_replace("/[^A-Za-z0-9 ]/", "", $first_string);
+$second_string = preg_replace("/[^A-Za-z0-9 ]/", "", $second_string);
+
  
 // Check if the strings are anagrams
 if (isStringAnagram($first_string, $second_string)) {
