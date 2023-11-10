@@ -24,13 +24,14 @@ function isStringAnagram($first_string, $second_string) {
  
 // capture  the strings to check if there are anagrams or not
 $first_string = readline("Enter the First  string: ");
-$second_string = readline("Enter the First  string: ");
+$second_string = readline("Enter the Second  string: ");
 
 // ignore spaces 
 $first_string = preg_replace("/[^A-Za-z0-9 ]/", "", $first_string);
 $second_string = preg_replace("/[^A-Za-z0-9 ]/", "", $second_string);
 
 // ignore capital letters
+// convert all captured inputs to lower case with //strtolower
 $first_string = strtolower(str_replace(" ", "", $first_string));
 $second_string = strtolower(str_replace(" ", "", $second_string));
 
@@ -38,8 +39,8 @@ $second_string = strtolower(str_replace(" ", "", $second_string));
 // Check if the strings are anagrams
 if (isStringAnagram($first_string, $second_string)) {
     // display if captured strings are anagrams
-    echo "The Captured strings are anagrams of each other.";
+    echo "True, The Captured strings are anagrams of each other.";
 } else {
     // display if captured strings are not anagrams
-    echo "The Captured strings are not anagrams of each other.";
+    echo "False, The Captured strings are not anagrams of each other.";
 }
