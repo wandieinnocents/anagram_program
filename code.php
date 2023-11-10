@@ -26,8 +26,13 @@ function isStringAnagram($first_string, $second_string) {
 $first_string = readline("Enter the First  string: ");
 $second_string = readline("Enter the First  string: ");
 
+// ignore spaces 
 $first_string = preg_replace("/[^A-Za-z0-9 ]/", "", $first_string);
 $second_string = preg_replace("/[^A-Za-z0-9 ]/", "", $second_string);
+
+// ignore capital letters
+$first_string = strtolower(str_replace(" ", "", $first_string));
+$second_string = strtolower(str_replace(" ", "", $second_string));
 
  
 // Check if the strings are anagrams
