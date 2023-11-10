@@ -1,11 +1,10 @@
 <?php
-
+// Question 1 : Program to test for anagrams in php core
 // Function to check if two strings are anagrams of each other
 // capture two parameters of the strings 
 function testForAnagrams($string_one, $string_two) {
 
-    // Remove spaces and convert to lowercase for case-insensitive comparison
-      // ignore capital letters
+    // convert to lowercase for case-insensitive comparison
     // convert all captured inputs to lower case with //strtolower
     $string_one = strtolower(str_replace(' ', '', $string_one));
     $string_two = strtolower(str_replace(' ', '', $string_two));
